@@ -17,7 +17,7 @@ public class QuitCommand implements Command {
      * quit the game.
      */
     public void execute() {
-        
+        player.quit();
     }
     
 }

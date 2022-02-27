@@ -23,7 +23,7 @@ public class InputHandler {
     public void buttonPressed(String button) {
         for (String i : commands.keySet()) {
             if (button.equals(i)){
-                commands.get(i);
+                commands.get(i).execute();;
             }
         }
 

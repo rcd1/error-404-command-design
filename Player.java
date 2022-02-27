@@ -30,4 +30,12 @@ public class Player {
         Continue to do this until the file is empty
         */
     }
+    /**
+     * Stop the system/end the game
+     */
+    public void quit() {
+        /*The driver already does your job,
+         but you're welcome to be here.*/
+        System.out.println("Until next time, brave hero.");
+    }
 }
