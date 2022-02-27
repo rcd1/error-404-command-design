@@ -16,5 +16,6 @@ public class GameDriver {
 			command = in.next().toLowerCase().trim();
 			inHandler.buttonPressed(command);
 		}
+		in.close();
 	}
 }
