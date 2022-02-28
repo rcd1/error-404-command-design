@@ -2,27 +2,22 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-
+/**
+ * A Class representing our brave hero
+ * @author danielhenington, Mostafa Mohamed Ali, Benjamin Singleton, and rcd1
+ */
 public class Player {
-
     /**
      * Prints opening dialogue
      */
     public Player() {
         System.out.println("Our hero is born.");
     }
-    
     /**
      * Displays the character jumping up and down in the console
      */
     public void jump() {
-        /* Loop through the jump.txt file, 
-        display 6 lines of the file at a time,  
-        sleep for a brief period of time, 
-        then clear the console
-        Continue to do this until the file is empty
-        */
-        File jump = new File("jump.txt");
+        File jump = new File("error-404-command-design/text_files/jump.txt");
         Scanner scan = null;
         try{
             scan = new Scanner(jump);
@@ -39,20 +34,12 @@ public class Player {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
     }
-
     /**
      * Displays the character firing in the console
      */
     public void fire() {
-        /* Loop through the fire.txt file, 
-        display 3 lines of the file at a time,  
-        sleep for a brief period of time, 
-        then clear the console
-        Continue to do this until the file is empty
-        */
-        File jump = new File("fire.txt");
+        File jump = new File("error-404-command-design/text_files/fire.txt");
         Scanner scan = null;
         try{
             scan = new Scanner(jump);
@@ -70,18 +57,11 @@ public class Player {
             e.printStackTrace();
         }
     }
-
     /**
      * Displays the character running in the console
      */
     public void runForward() {
-        /* Loop through the jump.txt file, 
-        display 3 lines of the file at a time,  
-        sleep for a brief period of time, 
-        then clear the console
-        Continue to do this until the file is empty
-        */
-        File run = new File("run.txt");
+        File run = new File("error-404-command-design/text_files/run.txt");
         Scanner scan = null;
         try{
             scan = new Scanner(run);
