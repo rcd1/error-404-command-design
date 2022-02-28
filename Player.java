@@ -45,6 +45,23 @@ public class Player {
         then clear the console
         Continue to do this until the file is empty
         */
+        File jump = new File("fire.txt");
+        Scanner scan = null;
+        try{
+            scan = new Scanner(jump);
+            while(scan.hasNextLine()) {
+                for(int i = 0; i < 3; i++) {
+                    System.out.println(scan.nextLine());
+                }
+                Thread.sleep(100);
+                System.out.print("\033[H\033[2J"); 
+                System.out.flush();
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public void runForward() {

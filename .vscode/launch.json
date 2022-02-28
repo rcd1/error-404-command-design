@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GameDriver",
+            "request": "launch",
+            "mainClass": "GameDriver"
+        }
+    ]
+}
