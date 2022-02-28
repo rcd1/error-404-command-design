@@ -54,6 +54,23 @@ public class Player {
         then clear the console
         Continue to do this until the file is empty
         */
+        File run = new File("run.txt");
+        Scanner scan = null;
+        try{
+            scan = new Scanner(run);
+            while(scan.hasNextLine()) {
+                for(int i = 0; i < 3; i++) {
+                    System.out.println(scan.nextLine());
+                }
+                Thread.sleep(100);
+                System.out.print("\033[H\033[2J"); 
+                System.out.flush();
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
     /**
      * Stop the system/end the game
