@@ -5,9 +5,13 @@ import java.util.Scanner;
 
 public class Player {
 
+    /**
+     * Prints opening dialogue
+     */
     public Player() {
         System.out.println("Our hero is born.");
     }
+    
     /**
      * Displays the character jumping up and down in the console
      */
@@ -38,6 +42,9 @@ public class Player {
 
     }
 
+    /**
+     * Displays the character firing in the console
+     */
     public void fire() {
         /* Loop through the fire.txt file, 
         display 3 lines of the file at a time,  
@@ -64,6 +71,9 @@ public class Player {
         }
     }
 
+    /**
+     * Displays the character running in the console
+     */
     public void runForward() {
         /* Loop through the jump.txt file, 
         display 3 lines of the file at a time,  
